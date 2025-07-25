@@ -96,7 +96,7 @@ module.exports = env => ({
     port: 1234,
     historyApiFallback: true,
     // host: 'localhost'
-    useLocalIp: true,
+    // useLocalIp: true, // Removed: not a valid option in webpack-dev-server v4
     http2: true,
     // Accessing camera requires HTTPS
     https: true,

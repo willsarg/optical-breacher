@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: optical-breacher.dockerfile.prod
+    ports:
+      - "1234:1234"
+    environment:
+      - NODE_ENV=production
