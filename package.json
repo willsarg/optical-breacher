@@ -12,7 +12,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tesseract.js": "^2.1.4",
-    "ua-parser-js": "^0.7.23"
+    "ua-parser-js": "^2.0.4"
   },
   "devDependencies": {
     "@types/babel__generator": "^7.27.0",
@@ -23,7 +23,7 @@
     "@types/http-errors": "^2.0.5",
     "@types/http-proxy": "^1.17.16",
     "@types/jest": "^26.0.19",
-    "@types/lodash": "^4.14.168",
+    "@types/lodash": "^4.17.20",
     "@types/prop-types": "^15.7.15",
     "@types/react": "^17.0.87",
     "@types/react-dom": "^17.0.26",
