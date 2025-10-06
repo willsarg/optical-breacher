@@ -5,9 +5,17 @@ import './main.css'
 
 const App = lazy(() => import('./app'))
 
-if ('serviceWorker' in navigator) {
+if (
+  'serviceWorker' in navigator &&
+  process.env.NODE_ENV === 'production' &&
+  window.isSecureContext
+) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js')
+    navigator.serviceWorker
+      .register('service-worker.js')
+      .catch(error => {
+        console.warn('Service worker registration failed', error)
+      })
   })
 }
 
